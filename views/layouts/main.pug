@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Nemoporisol
+        link(rel="stylesheet", href="/styles/main.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css")
+        link(rel="shortcut icon", href="/images/logo.png", type="image/png")
+        block style
+    body 
+        .container 
+            .navbar 
+                .navbar-left 
+                    .navbar-company Nemoporisol
+                    i.close-btn-navbar.fas.fa-caret-down  
+                .navbar-right 
+                    a.navbar-item(href="/" class=(path === '/' ? 'active' : '')) shop 
+                    a.navbar-item(href="/product-list",class=(path === '/product-list' ? 'active' : '')) products 
+                    a.navbar-item(href="/admin",class=(path === '/admin' ? 'active' : '')) admin
+            .main
+                block message
+                block content
+            .popup 
+                div.message 
+        script(src="/script/navbar.js")
+        script(src="/script/popup.js") 
+        block scripts 

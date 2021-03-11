@@ -1,0 +1,17 @@
+extends ../layouts/main.pug
+    
+block style
+    link(rel="stylesheet", href="/styles/admin/add-product.css")    
+
+block content     
+    .add-products-left 
+        form(action="/admin/add-product", method="post").add-products-section
+            h2.section-heading Add Product Details 
+            input(type="text", name="title" placeholder="Enter Title").input-text
+            input(type="text", name="price" placeholder="Enter Price").input-text
+            input(type="text", name="imageUrl" placeholder="Enter Image Link").input-text
+            input(type="text", name="key" placeholder="Enter Unique ID Key").input-text
+            input(type="text", name="desc" placeholder="Enter description").input-text
+            button(type="submit").btn-input Add Products   
+    .add-products-right
+                

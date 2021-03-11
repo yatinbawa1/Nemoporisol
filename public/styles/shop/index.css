@@ -1,0 +1,149 @@
+.truthMessage {
+    width: 100%;
+    background-color: #EEEEEE;
+    height: auto;
+    padding: 3rem;
+}
+
+.heading-truth {
+    font-size: 30px;
+    font-weight: 500;
+    margin-left:80px;
+    color: #7D7878;
+}
+
+.content-truth {
+    width: 70%;
+    color: #A7A2A2;
+    font-size: 18px;
+    margin-left:80px;
+}
+
+.btn-truth {
+    margin-top: 1rem;
+    padding: 1.5rem 3.5rem;
+    border-radius: 1rem;
+    border: none;
+    color: #C8C6C6;
+    transition: all .2s;
+    font-family: 'Orienta', sans-serif;
+    background-color: #555151;
+    cursor: pointer;
+    margin-left:80px;
+}
+
+.btn-truth:hover {
+    background-color: #2C2828;
+    color: #f5f5f5;
+}
+
+.bold {
+    color: #3F7CD8;
+    font-weight: 700;
+}
+
+.screen {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+/* ** NeoItem Start** */
+
+.neoItem {
+    margin-bottom: 4rem;
+    margin-left: 80px;
+    display: flex;
+    width: 70%;
+}
+
+.img-container{
+    position: relative;
+    width: 327px;
+    height: 300px;
+    margin-right: 2rem !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.neoItem-img {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.neoItem-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.item-heading {
+    color: #314D78;
+    font-size: 27px;
+    font-weight: 500;
+}
+.item-price {
+    display: flex;
+}
+.startsAt {
+    font-size: 14px;
+    color: #BFBFBF;
+}
+.prOfItem {
+    position: relative;
+    margin-left: 15px;
+    font-size: 19px;
+    color: #BFBFBF;
+}
+.prOfItem::before {
+    position: absolute;
+    content: "$";
+    font-size: 15px;
+    transform: translateX(-10px);
+}
+
+.content-middle {
+    margin-top: 20px;
+}
+.headline {
+    font-size: 18px;
+    color: #73BE9A;
+}
+.description {
+    margin-top: 5px;
+    font-size: 14.5px;
+    color: #595858;
+}
+
+.content-bottom {
+    margin-top: 20px;
+}
+
+.btn-addToCart {
+    border-radius: 10px;
+    border: none;
+    padding: 1.5rem 2.5rem;
+    background-color: #DFE6FD;
+    color: #5F7EFA;
+    transition: all .2s;
+    width: 100%;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: 'Orienta', sans-serif;
+}
+.btn-addToCart:hover {
+    border: 1px solid #5F7EFA;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    margin-right: 80px;
+    margin-left:auto;
+}
+.reverse-content {
+    margin-left: 0px;
+    margin-right: 2rem;
+}

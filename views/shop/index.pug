@@ -1,0 +1,29 @@
+extends ../layouts/main.pug
+block style
+    link(rel="stylesheet", href="./styles/shop/index.css")
+
+block message
+    .truthMessage 
+        h1.heading-truth WE SELL 
+            span.bold PRODUCTS 
+            span NOT YOUR 
+            span.bold TRUST 
+        p.content-truth we at Nemoprisol have prioritize coustmer satisfaction on everything else, an strive to achive that from last 40years. Anythinh you buy can be returned in 7 days of purchase and we even pay for dilevery,Always read terms and conditions before buying anything online
+        button.btn-truth Terms & Conditions 
+block content  
+    .screen
+        each product in neoItems 
+            div(class=(product.id % 2 == 0) ? "reverse" : "").neoItem 
+                .img-container 
+                    img(src=product.imageUrl, alt="").neoItem-img
+                div(class=(product.id % 2 == 0) ? "reverse-content" : "").neoItem-content 
+                    .content-top
+                        .item-heading #{product.heading}
+                        .item-price
+                            p.startsAt starts at
+                            p.prOfItem #{product.price}
+                    .content-middle 
+                        .headline #{product.headline} 
+                        .description #{product.description}
+                    .content-bottom 
+                        button.btn-addToCart  Add To Cart  

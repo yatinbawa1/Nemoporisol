@@ -1,0 +1,10 @@
+extends layouts/main.pug
+block style 
+    link(rel="stylesheet", href="/styles/errors/404.css")
+block content  
+    .center-div 
+        h1.page-404 Page Not Found 
+        a.btn-back(href="/")
+            i.fas.fa-long-arrow-alt-left 
+            span(style = "font-family:inherit")  Go To Homepage 
+              

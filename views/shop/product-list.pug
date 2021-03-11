@@ -1,0 +1,30 @@
+extends ../layouts/main.pug
+block style
+    link(rel="stylesheet", href="/styles/shop/product-list.css")
+block scripts
+    script(src="/script/shop.js") 
+block content
+        .shop-section
+            if products.length < 1
+                .center-div
+                    a(href="/").no-product-title 
+                        span.error Error!
+                        span.solution Reload
+            else 
+                .heading
+                    h1.heading1 Serquios
+                .grid
+                    each product in products 
+                        .card(ID="card-"+product.key)
+                            .card-img(ID="card-img-"+product.key)
+                                img(src=product.imageUrl, alt="" ID="card-img-e-"+product.key).card-img-e
+                            
+                            .card-tags(ID="card-tags-"+product.key)
+                                .card-heading(ID="card-heading-"+product.key) #{product.title} 
+                                .card-price(ID="card-price-"+product.key) #{product.price}
+                            .card-func(ID="card-right-"+product.key)
+                                div(ID="card-share-link-"+product.key).func-btn.card-share-link Share 
+                                div(ID="card-star-"+product.key).func-btn.card-star Star
+                            .card-desc(ID="card-desc-"+product.key) #{product.desc}
+                            button(ID="card-btn-"+product.key).card-btn Add to cart 
+                                i.fa.fa-plus
