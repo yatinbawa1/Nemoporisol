@@ -11,7 +11,7 @@ block message
         p.content-truth we at Nemoprisol have prioritize coustmer satisfaction on everything else, an strive to achive that from last 40years. Anythinh you buy can be returned in 7 days of purchase and we even pay for dilevery,Always read terms and conditions before buying anything online
         button.btn-truth Terms & Conditions 
         
-block content  
+block content
     .screen
         each product in neoItems 
             div(class=(product.id % 2 == 0) ? "reverse" : "").neoItem 
@@ -27,4 +27,4 @@ block content
                         .headline #{product.headline} 
                         .description #{product.description}
                     .content-bottom 
-                        button.btn-addToCart  Add To Cart  
+                        button.btn-addToCart  Add To Cart 

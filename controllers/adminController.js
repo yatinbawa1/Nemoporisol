@@ -22,6 +22,7 @@ exports.addNewProduct = (req, res) => {
     uniqueId: req.body.key,
     desc: req.body.desc,
   });
+
   product.save(() => {
     res.redirect("/");
   });
